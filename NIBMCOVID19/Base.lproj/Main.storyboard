@@ -12,47 +12,471 @@
             <objects>
                 <viewController id="tu3-hB-Bb3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7s-8i-LpX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-Xi-q2L">
-                                <rect key="frame" x="40" y="792" width="41" height="30"/>
-                                <state key="normal" title="Home"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-Ka-xX8">
-                                <rect key="frame" x="161" y="792" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-1E-gor">
-                                <rect key="frame" x="317" y="792" width="57" height="30"/>
+                                <rect key="frame" x="327" y="738" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phd-fU-bVT">
-                                <rect key="frame" x="178" y="446" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-Ka-xX8">
+                                <rect key="frame" x="192" y="738" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="RFH-qV-jcX" kind="show" id="84J-KU-CqG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-qd-5wH">
+                                <rect key="frame" x="20" y="40" width="374" height="168"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH3-49-TBs">
+                                <rect key="frame" x="164" y="386" width="86" height="30"/>
+                                <state key="normal" title="Safe Actions"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u1L-F7-giY">
+                                <rect key="frame" x="60" y="281" width="294" height="97"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">All You Need is 
+Stay at Home</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-Xi-q2L">
+                                <rect key="frame" x="46" y="738" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="cN1-Ka-xX8" secondAttribute="bottom" constant="40" id="5Qn-bb-Ps9"/>
-                            <constraint firstItem="BQt-1E-gor" firstAttribute="leading" secondItem="cN1-Ka-xX8" secondAttribute="trailing" constant="90" id="GDq-DN-IWX"/>
-                            <constraint firstItem="BQt-1E-gor" firstAttribute="leading" secondItem="cN1-Ka-xX8" secondAttribute="trailing" constant="90" id="ODe-DR-JE4"/>
-                            <constraint firstItem="cN1-Ka-xX8" firstAttribute="leading" secondItem="y9E-Xi-q2L" secondAttribute="trailing" constant="90" id="OkE-Pp-6Fo"/>
-                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="BQt-1E-gor" secondAttribute="bottom" constant="40" id="aKk-IQ-RFX"/>
-                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="y9E-Xi-q2L" secondAttribute="bottom" constant="40" id="emL-8S-qHv"/>
-                            <constraint firstItem="y9E-Xi-q2L" firstAttribute="leading" secondItem="dm3-Cl-mQW" secondAttribute="leading" constant="40" id="iIS-bY-NzR"/>
-                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="trailing" secondItem="BQt-1E-gor" secondAttribute="trailing" constant="40" id="mob-8F-cke"/>
-                            <constraint firstItem="cN1-Ka-xX8" firstAttribute="leading" secondItem="y9E-Xi-q2L" secondAttribute="trailing" constant="90" id="tLT-ru-UsM"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="trailing" secondItem="BQt-1E-gor" secondAttribute="trailing" constant="30" id="1VG-sX-TNE"/>
+                            <constraint firstItem="BQt-1E-gor" firstAttribute="leading" secondItem="cN1-Ka-xX8" secondAttribute="trailing" constant="100" id="6Yl-Iy-rQY"/>
+                            <constraint firstItem="BQt-1E-gor" firstAttribute="leading" secondItem="cN1-Ka-xX8" secondAttribute="trailing" constant="105" id="B5S-eK-tWF"/>
+                            <constraint firstItem="TH3-49-TBs" firstAttribute="top" secondItem="u1L-F7-giY" secondAttribute="bottom" constant="8" id="DVg-AZ-6X4"/>
+                            <constraint firstItem="cN1-Ka-xX8" firstAttribute="leading" secondItem="y9E-Xi-q2L" secondAttribute="trailing" constant="105" id="GH1-Bj-iBI"/>
+                            <constraint firstItem="TH3-49-TBs" firstAttribute="top" secondItem="u1L-F7-giY" secondAttribute="bottom" constant="8" id="HAi-n5-Mm2"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="cN1-Ka-xX8" secondAttribute="bottom" constant="40" id="HQN-PM-Spq"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="y9E-Xi-q2L" secondAttribute="bottom" constant="40" id="Hoc-eH-p99"/>
+                            <constraint firstItem="CK9-qd-5wH" firstAttribute="leading" secondItem="dm3-Cl-mQW" secondAttribute="leading" constant="20" id="RxU-d8-n71"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="trailing" secondItem="TH3-49-TBs" secondAttribute="trailing" constant="164" id="Sik-h7-V9Q"/>
+                            <constraint firstItem="cN1-Ka-xX8" firstAttribute="leading" secondItem="y9E-Xi-q2L" secondAttribute="trailing" constant="105" id="dLr-m1-bsI"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="trailing" secondItem="u1L-F7-giY" secondAttribute="trailing" constant="60" id="dkO-Jd-DT4"/>
+                            <constraint firstItem="u1L-F7-giY" firstAttribute="top" secondItem="CK9-qd-5wH" secondAttribute="bottom" constant="30" id="eRN-0e-H9T"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="bottom" secondItem="BQt-1E-gor" secondAttribute="bottom" constant="40" id="jF1-3S-gNY"/>
+                            <constraint firstItem="TH3-49-TBs" firstAttribute="leading" secondItem="dm3-Cl-mQW" secondAttribute="leading" constant="164" id="kS3-Hf-cC1"/>
+                            <constraint firstItem="CK9-qd-5wH" firstAttribute="top" secondItem="dm3-Cl-mQW" secondAttribute="top" constant="40" id="oWy-S1-O5g"/>
+                            <constraint firstItem="dm3-Cl-mQW" firstAttribute="trailing" secondItem="CK9-qd-5wH" secondAttribute="trailing" constant="20" id="vGO-yv-jOd"/>
+                            <constraint firstItem="u1L-F7-giY" firstAttribute="leading" secondItem="dm3-Cl-mQW" secondAttribute="leading" constant="60" id="vcI-Te-vYz"/>
+                            <constraint firstItem="y9E-Xi-q2L" firstAttribute="leading" secondItem="dm3-Cl-mQW" secondAttribute="leading" constant="40" id="xGk-uX-D7e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dm3-Cl-mQW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="shn-cm-VKF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgi-9h-ZVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840.57971014492762" y="-677.00892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aif-59-4Yd">
+            <objects>
+                <viewController id="RFH-qV-jcX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NQx-fw-JSk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wash" translatesAutoresizingMaskIntoConstraints="NO" id="rTf-FU-rvz">
+                                <rect key="frame" x="20" y="141" width="374" height="391"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-Sw-voZ">
+                                <rect key="frame" x="90" y="90" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKD-8i-Hud">
+                                <rect key="frame" x="30" y="35" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxE-es-PbG">
+                                <rect key="frame" x="347" y="738" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="VZ2-aY-JtQ" kind="showDetail" id="An7-Ts-mg5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNf-Zf-5hm">
+                                <rect key="frame" x="20" y="542" width="374" height="171"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rTf-FU-rvz" firstAttribute="top" secondItem="1HI-Sw-voZ" secondAttribute="bottom" constant="30" id="531-YV-Per"/>
+                            <constraint firstItem="AxE-es-PbG" firstAttribute="top" secondItem="cNf-Zf-5hm" secondAttribute="bottom" constant="20" id="5t5-tg-BL0"/>
+                            <constraint firstItem="1LO-Et-DaE" firstAttribute="trailing" secondItem="AxE-es-PbG" secondAttribute="trailing" constant="35" id="C3p-CE-bF9"/>
+                            <constraint firstItem="1LO-Et-DaE" firstAttribute="trailing" secondItem="cNf-Zf-5hm" secondAttribute="trailing" constant="20" id="E0s-gT-bHs"/>
+                            <constraint firstItem="1LO-Et-DaE" firstAttribute="trailing" secondItem="rTf-FU-rvz" secondAttribute="trailing" constant="20" id="ENC-rw-5r0"/>
+                            <constraint firstItem="vKD-8i-Hud" firstAttribute="leading" secondItem="1LO-Et-DaE" secondAttribute="leading" constant="30" id="ETQ-Zr-ZR5"/>
+                            <constraint firstItem="vKD-8i-Hud" firstAttribute="top" secondItem="1LO-Et-DaE" secondAttribute="top" constant="35" id="M9S-IU-mKK"/>
+                            <constraint firstItem="1HI-Sw-voZ" firstAttribute="top" secondItem="vKD-8i-Hud" secondAttribute="bottom" constant="25" id="MKy-L9-jPb"/>
+                            <constraint firstItem="cNf-Zf-5hm" firstAttribute="top" secondItem="rTf-FU-rvz" secondAttribute="bottom" constant="10" id="Qe7-V8-NrE"/>
+                            <constraint firstItem="cNf-Zf-5hm" firstAttribute="leading" secondItem="1LO-Et-DaE" secondAttribute="leading" constant="20" id="Rhl-IR-Nsu"/>
+                            <constraint firstItem="cNf-Zf-5hm" firstAttribute="top" secondItem="rTf-FU-rvz" secondAttribute="bottom" constant="10" id="cPa-V7-dnu"/>
+                            <constraint firstItem="rTf-FU-rvz" firstAttribute="leading" secondItem="1LO-Et-DaE" secondAttribute="leading" constant="20" id="dmD-Dg-ja7"/>
+                            <constraint firstItem="1LO-Et-DaE" firstAttribute="trailing" secondItem="1HI-Sw-voZ" secondAttribute="trailing" constant="90" id="fLg-pv-ytY"/>
+                            <constraint firstItem="rTf-FU-rvz" firstAttribute="top" secondItem="1HI-Sw-voZ" secondAttribute="bottom" constant="30" id="gP0-fR-XkF"/>
+                            <constraint firstItem="AxE-es-PbG" firstAttribute="top" secondItem="cNf-Zf-5hm" secondAttribute="bottom" constant="25" id="gnh-2f-Wx3"/>
+                            <constraint firstItem="1LO-Et-DaE" firstAttribute="bottom" secondItem="AxE-es-PbG" secondAttribute="bottom" constant="40" id="i3G-fL-e60"/>
+                            <constraint firstItem="1HI-Sw-voZ" firstAttribute="leading" secondItem="1LO-Et-DaE" secondAttribute="leading" constant="90" id="jzE-kg-Zdc"/>
+                            <constraint firstItem="1HI-Sw-voZ" firstAttribute="top" secondItem="vKD-8i-Hud" secondAttribute="bottom" constant="25" id="y6n-AE-23c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1LO-Et-DaE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mXr-Ga-uCB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sv-tQ-hIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.1884057971015" y="-673.66071428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tjP-pV-dmW">
+            <objects>
+                <viewController id="VZ2-aY-JtQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kE1-xm-aj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiv-vH-Mgi">
+                                <rect key="frame" x="20" y="30" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paS-Oc-e1M">
+                                <rect key="frame" x="340" y="738" width="34" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="iH1-AT-2iS" kind="show" id="zLm-q6-gsr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clean" translatesAutoresizingMaskIntoConstraints="NO" id="C8b-dw-N6S">
+                                <rect key="frame" x="20" y="135" width="374" height="393"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-pX-pMc">
+                                <rect key="frame" x="85" y="74" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7uP-O2-jsr">
+                                <rect key="frame" x="20" y="548" width="374" height="145"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="paS-Oc-e1M" firstAttribute="leading" secondItem="Npu-xb-chW" secondAttribute="leading" constant="340" id="13v-Dc-Ypu"/>
+                            <constraint firstItem="C8b-dw-N6S" firstAttribute="top" secondItem="eNt-pX-pMc" secondAttribute="bottom" constant="40" id="1fY-n1-Ujc"/>
+                            <constraint firstItem="C8b-dw-N6S" firstAttribute="top" secondItem="xiv-vH-Mgi" secondAttribute="bottom" constant="75" id="1xq-Qs-xDk"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="trailing" secondItem="C8b-dw-N6S" secondAttribute="trailing" constant="20" id="64H-I5-smI"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="trailing" secondItem="7uP-O2-jsr" secondAttribute="trailing" constant="20" id="6em-vi-L8i"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="trailing" secondItem="eNt-pX-pMc" secondAttribute="trailing" constant="85" id="9qC-vt-jfV"/>
+                            <constraint firstItem="7uP-O2-jsr" firstAttribute="top" secondItem="C8b-dw-N6S" secondAttribute="bottom" constant="20" id="Bzr-Cy-Hdt"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="bottom" secondItem="paS-Oc-e1M" secondAttribute="bottom" constant="40" id="E5y-MK-lYZ"/>
+                            <constraint firstItem="C8b-dw-N6S" firstAttribute="top" secondItem="eNt-pX-pMc" secondAttribute="bottom" constant="40" id="HdT-dV-wFI"/>
+                            <constraint firstItem="xiv-vH-Mgi" firstAttribute="top" secondItem="Npu-xb-chW" secondAttribute="top" constant="30" id="I9b-En-HsU"/>
+                            <constraint firstItem="C8b-dw-N6S" firstAttribute="leading" secondItem="Npu-xb-chW" secondAttribute="leading" constant="20" id="YFq-iP-8ra"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="trailing" secondItem="paS-Oc-e1M" secondAttribute="trailing" constant="40" id="YNd-Pn-wkF"/>
+                            <constraint firstItem="paS-Oc-e1M" firstAttribute="top" secondItem="7uP-O2-jsr" secondAttribute="bottom" constant="45" id="d0J-W6-Kdd"/>
+                            <constraint firstItem="paS-Oc-e1M" firstAttribute="top" secondItem="7uP-O2-jsr" secondAttribute="bottom" constant="45" id="eoZ-k6-nIk"/>
+                            <constraint firstItem="7uP-O2-jsr" firstAttribute="top" secondItem="C8b-dw-N6S" secondAttribute="bottom" constant="20" id="jwK-KE-Pou"/>
+                            <constraint firstItem="eNt-pX-pMc" firstAttribute="leading" secondItem="Npu-xb-chW" secondAttribute="leading" constant="85" id="pJ7-VW-Yad"/>
+                            <constraint firstItem="xiv-vH-Mgi" firstAttribute="leading" secondItem="Npu-xb-chW" secondAttribute="leading" constant="20" id="qvl-mC-VZS"/>
+                            <constraint firstItem="7uP-O2-jsr" firstAttribute="leading" secondItem="Npu-xb-chW" secondAttribute="leading" constant="20" id="zY0-AT-YSv"/>
+                            <constraint firstItem="Npu-xb-chW" firstAttribute="trailing" secondItem="xiv-vH-Mgi" secondAttribute="trailing" constant="360" id="zbj-YC-Y2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Npu-xb-chW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knf-s8-Olw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556.521739130435" y="-674.33035714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kka-x8-DlY">
+            <objects>
+                <viewController id="iH1-AT-2iS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MEH-fY-Dah">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IW-BB-nqM">
+                                <rect key="frame" x="40" y="35" width="44" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avoid touching" translatesAutoresizingMaskIntoConstraints="NO" id="apJ-jc-1wL">
+                                <rect key="frame" x="20" y="145" width="374" height="390"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXF-rv-dtV">
+                                <rect key="frame" x="330" y="738" width="44" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="rdi-aR-rog" kind="show" id="wpb-eR-RGX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-dg-opL">
+                                <rect key="frame" x="90" y="80" width="234" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lSk-kw-raL">
+                                <rect key="frame" x="20" y="543" width="374" height="145"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zEL-dg-opL" firstAttribute="leading" secondItem="dRi-4Q-SAZ" secondAttribute="leading" constant="90" id="1fl-w3-1gk"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="bottom" secondItem="sXF-rv-dtV" secondAttribute="bottom" constant="40" id="1oT-6U-Z3r"/>
+                            <constraint firstItem="9IW-BB-nqM" firstAttribute="leading" secondItem="dRi-4Q-SAZ" secondAttribute="leading" constant="40" id="8rN-z7-CJM"/>
+                            <constraint firstItem="apJ-jc-1wL" firstAttribute="leading" secondItem="dRi-4Q-SAZ" secondAttribute="leading" constant="20" id="BRl-tC-Y29"/>
+                            <constraint firstItem="sXF-rv-dtV" firstAttribute="top" secondItem="lSk-kw-raL" secondAttribute="bottom" constant="50" id="DQ3-U4-LFM"/>
+                            <constraint firstItem="apJ-jc-1wL" firstAttribute="top" secondItem="9IW-BB-nqM" secondAttribute="bottom" constant="80" id="E4s-6C-dUw"/>
+                            <constraint firstItem="apJ-jc-1wL" firstAttribute="top" secondItem="zEL-dg-opL" secondAttribute="bottom" constant="40" id="J1u-dl-1UB"/>
+                            <constraint firstItem="lSk-kw-raL" firstAttribute="top" secondItem="apJ-jc-1wL" secondAttribute="bottom" constant="8" id="J74-kX-UFS"/>
+                            <constraint firstItem="sXF-rv-dtV" firstAttribute="leading" secondItem="dRi-4Q-SAZ" secondAttribute="leading" constant="330" id="LID-Km-UBA"/>
+                            <constraint firstItem="9IW-BB-nqM" firstAttribute="top" secondItem="dRi-4Q-SAZ" secondAttribute="top" constant="35" id="LLD-Cv-w93"/>
+                            <constraint firstItem="lSk-kw-raL" firstAttribute="top" secondItem="apJ-jc-1wL" secondAttribute="bottom" constant="8" id="LXH-ce-jgl"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="trailing" secondItem="sXF-rv-dtV" secondAttribute="trailing" constant="40" id="P2Q-wP-iGG"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="trailing" secondItem="zEL-dg-opL" secondAttribute="trailing" constant="90" id="c2d-EV-BjB"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="trailing" secondItem="lSk-kw-raL" secondAttribute="trailing" constant="20" id="isZ-GE-Pac"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="trailing" secondItem="apJ-jc-1wL" secondAttribute="trailing" constant="20" id="k6u-sX-cxR"/>
+                            <constraint firstItem="dRi-4Q-SAZ" firstAttribute="trailing" secondItem="9IW-BB-nqM" secondAttribute="trailing" constant="330" id="qG4-hj-WLJ"/>
+                            <constraint firstItem="sXF-rv-dtV" firstAttribute="top" secondItem="lSk-kw-raL" secondAttribute="bottom" constant="50" id="qiE-us-0gQ"/>
+                            <constraint firstItem="zEL-dg-opL" firstAttribute="top" secondItem="dRi-4Q-SAZ" secondAttribute="top" constant="80" id="wcT-iC-noR"/>
+                            <constraint firstItem="apJ-jc-1wL" firstAttribute="top" secondItem="zEL-dg-opL" secondAttribute="bottom" constant="40" id="xZF-x9-Zt6"/>
+                            <constraint firstItem="lSk-kw-raL" firstAttribute="leading" secondItem="dRi-4Q-SAZ" secondAttribute="leading" constant="20" id="zhZ-2k-PaK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dRi-4Q-SAZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MY7-v7-L7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFT-aY-VJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3215.9420289855075" y="-672.32142857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fjX-Gh-9x6">
+            <objects>
+                <viewController id="rdi-aR-rog" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCZ-Bg-xfT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njl-rs-7nc">
+                                <rect key="frame" x="90" y="85" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-Vj-fbY">
+                                <rect key="frame" x="40" y="40" width="34" height="31"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covercough" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-6i-9ej">
+                                <rect key="frame" x="20" y="131" width="374" height="389"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si9-Qb-Xjn">
+                                <rect key="frame" x="330" y="738" width="44" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Hge-SD-whl" kind="show" id="uYf-Yt-nGG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-cA-eUD">
+                                <rect key="frame" x="20" y="528" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GPm-6i-9ej" firstAttribute="leading" secondItem="zpf-9B-sc6" secondAttribute="leading" constant="20" id="1VJ-65-idv"/>
+                            <constraint firstItem="si9-Qb-Xjn" firstAttribute="leading" secondItem="zpf-9B-sc6" secondAttribute="leading" constant="330" id="4ba-IY-7CL"/>
+                            <constraint firstItem="GPm-6i-9ej" firstAttribute="top" secondItem="njl-rs-7nc" secondAttribute="bottom" constant="25" id="90m-ix-SMo"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="trailing" secondItem="mO6-Vj-fbY" secondAttribute="trailing" constant="340" id="Iah-6U-NO4"/>
+                            <constraint firstItem="mO6-Vj-fbY" firstAttribute="top" secondItem="zpf-9B-sc6" secondAttribute="top" constant="40" id="KBn-uQ-lW3"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="trailing" secondItem="si9-Qb-Xjn" secondAttribute="trailing" constant="40" id="NNL-Fr-x3l"/>
+                            <constraint firstItem="si9-Qb-Xjn" firstAttribute="top" secondItem="xV9-cA-eUD" secondAttribute="bottom" constant="60" id="SbZ-cJ-zTv"/>
+                            <constraint firstItem="mO6-Vj-fbY" firstAttribute="leading" secondItem="zpf-9B-sc6" secondAttribute="leading" constant="40" id="XgB-ar-kP6"/>
+                            <constraint firstItem="GPm-6i-9ej" firstAttribute="top" secondItem="njl-rs-7nc" secondAttribute="bottom" constant="25" id="YOM-qH-jga"/>
+                            <constraint firstItem="njl-rs-7nc" firstAttribute="leading" secondItem="zpf-9B-sc6" secondAttribute="leading" constant="90" id="cBI-Ls-CL9"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="trailing" secondItem="xV9-cA-eUD" secondAttribute="trailing" constant="20" id="cUN-J4-VBe"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="trailing" secondItem="GPm-6i-9ej" secondAttribute="trailing" constant="20" id="gKQ-T5-8tR"/>
+                            <constraint firstItem="xV9-cA-eUD" firstAttribute="top" secondItem="GPm-6i-9ej" secondAttribute="bottom" constant="8" id="gyo-TD-ZXz"/>
+                            <constraint firstItem="xV9-cA-eUD" firstAttribute="leading" secondItem="zpf-9B-sc6" secondAttribute="leading" constant="20" id="ihX-1x-fiB"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="trailing" secondItem="njl-rs-7nc" secondAttribute="trailing" constant="90" id="iow-kc-Aas"/>
+                            <constraint firstItem="njl-rs-7nc" firstAttribute="top" secondItem="zpf-9B-sc6" secondAttribute="top" constant="85" id="jj9-ej-7ex"/>
+                            <constraint firstItem="zpf-9B-sc6" firstAttribute="bottom" secondItem="si9-Qb-Xjn" secondAttribute="bottom" constant="40" id="lHd-QR-Ua1"/>
+                            <constraint firstItem="xV9-cA-eUD" firstAttribute="top" secondItem="GPm-6i-9ej" secondAttribute="bottom" constant="8" id="qlV-MC-lDt"/>
+                            <constraint firstItem="si9-Qb-Xjn" firstAttribute="top" secondItem="xV9-cA-eUD" secondAttribute="bottom" constant="60" id="qv8-W4-4fj"/>
+                            <constraint firstItem="GPm-6i-9ej" firstAttribute="top" secondItem="mO6-Vj-fbY" secondAttribute="bottom" constant="60" id="tMn-rD-xdE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zpf-9B-sc6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ncs-tJ-YXr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flz-Mb-EKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3971.0144927536235" y="-677.00892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U5h-jJ-BTQ">
+            <objects>
+                <viewController id="Hge-SD-whl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hd7-Dl-2Pj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-RQ-z6e">
+                                <rect key="frame" x="30" y="40" width="59" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m76-CW-vKf">
+                                <rect key="frame" x="90" y="80" width="234" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avoidclosecontact" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-nZ-OAl">
+                                <rect key="frame" x="20" y="130" width="374" height="393"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EdX-T9-EIk">
+                                <rect key="frame" x="20" y="533" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vA-pV-c9s">
+                                <rect key="frame" x="340" y="743" width="34" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Vea-GJ-PMX" kind="show" id="YAU-k8-FSl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dga-nZ-OAl" firstAttribute="top" secondItem="m76-CW-vKf" secondAttribute="bottom" constant="25" id="66c-ED-Gps"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="trailing" secondItem="hWI-RQ-z6e" secondAttribute="trailing" constant="325" id="AXW-0n-zUm"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="bottom" secondItem="6vA-pV-c9s" secondAttribute="bottom" constant="35" id="Hpb-sY-H29"/>
+                            <constraint firstItem="EdX-T9-EIk" firstAttribute="top" secondItem="Dga-nZ-OAl" secondAttribute="bottom" constant="10" id="T7H-rv-QEQ"/>
+                            <constraint firstItem="m76-CW-vKf" firstAttribute="top" secondItem="mL7-tC-qDI" secondAttribute="top" constant="80" id="VxR-qh-y4J"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="trailing" secondItem="6vA-pV-c9s" secondAttribute="trailing" constant="40" id="YsC-k5-L68"/>
+                            <constraint firstItem="6vA-pV-c9s" firstAttribute="top" secondItem="EdX-T9-EIk" secondAttribute="bottom" constant="60" id="YzK-by-WOc"/>
+                            <constraint firstItem="m76-CW-vKf" firstAttribute="leading" secondItem="mL7-tC-qDI" secondAttribute="leading" constant="90" id="ZBb-sY-Hg0"/>
+                            <constraint firstItem="Dga-nZ-OAl" firstAttribute="top" secondItem="m76-CW-vKf" secondAttribute="bottom" constant="25" id="aEs-Ma-ZOc"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="trailing" secondItem="Dga-nZ-OAl" secondAttribute="trailing" constant="20" id="afa-Hu-4mV"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="trailing" secondItem="EdX-T9-EIk" secondAttribute="trailing" constant="20" id="dBE-4E-9gG"/>
+                            <constraint firstItem="EdX-T9-EIk" firstAttribute="leading" secondItem="mL7-tC-qDI" secondAttribute="leading" constant="20" id="eKi-hD-28t"/>
+                            <constraint firstItem="hWI-RQ-z6e" firstAttribute="leading" secondItem="mL7-tC-qDI" secondAttribute="leading" constant="30" id="jVG-jF-GYN"/>
+                            <constraint firstItem="6vA-pV-c9s" firstAttribute="leading" secondItem="mL7-tC-qDI" secondAttribute="leading" constant="340" id="maS-mC-bJv"/>
+                            <constraint firstItem="hWI-RQ-z6e" firstAttribute="top" secondItem="mL7-tC-qDI" secondAttribute="top" constant="40" id="nTb-uU-Rv5"/>
+                            <constraint firstItem="6vA-pV-c9s" firstAttribute="top" secondItem="EdX-T9-EIk" secondAttribute="bottom" constant="60" id="uda-Xk-FD6"/>
+                            <constraint firstItem="EdX-T9-EIk" firstAttribute="top" secondItem="Dga-nZ-OAl" secondAttribute="bottom" constant="10" id="w9g-NE-SQ5"/>
+                            <constraint firstItem="Dga-nZ-OAl" firstAttribute="leading" secondItem="mL7-tC-qDI" secondAttribute="leading" constant="20" id="xHn-Pe-HbN"/>
+                            <constraint firstItem="Dga-nZ-OAl" firstAttribute="top" secondItem="hWI-RQ-z6e" secondAttribute="bottom" constant="60" id="yAB-w0-ob4"/>
+                            <constraint firstItem="mL7-tC-qDI" firstAttribute="trailing" secondItem="m76-CW-vKf" secondAttribute="trailing" constant="90" id="zcd-3u-gLC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mL7-tC-qDI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qvM-Yf-SrG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBt-wY-e8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4634.7826086956529" y="-673.66071428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IBT-gD-wJe">
+            <objects>
+                <viewController id="Vea-GJ-PMX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uY2-VZ-z3e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIv-Y7-TzV">
+                                <rect key="frame" x="40" y="30" width="44" height="31"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUb-8z-UOe">
+                                <rect key="frame" x="90" y="75" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stayhome" translatesAutoresizingMaskIntoConstraints="NO" id="X9Q-xH-Em4">
+                                <rect key="frame" x="20" y="121" width="374" height="390"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgk-8l-WiM">
+                                <rect key="frame" x="340" y="738" width="34" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GxK-fK-hCI">
+                                <rect key="frame" x="20" y="521" width="374" height="157"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GxK-fK-hCI" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="20" id="1q4-J6-Vao"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="gIv-Y7-TzV" secondAttribute="trailing" constant="330" id="946-9h-0l8"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="JUb-8z-UOe" secondAttribute="trailing" constant="90" id="9vb-tc-4ib"/>
+                            <constraint firstItem="vgk-8l-WiM" firstAttribute="top" secondItem="GxK-fK-hCI" secondAttribute="bottom" constant="60" id="B5i-a5-9hC"/>
+                            <constraint firstItem="vgk-8l-WiM" firstAttribute="top" secondItem="GxK-fK-hCI" secondAttribute="bottom" constant="60" id="Gqm-oT-hCL"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="GxK-fK-hCI" secondAttribute="trailing" constant="20" id="MZD-QW-kiB"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="X9Q-xH-Em4" secondAttribute="trailing" constant="20" id="Qa2-aU-XgI"/>
+                            <constraint firstItem="JUb-8z-UOe" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="90" id="SPJ-9E-Hxj"/>
+                            <constraint firstItem="GxK-fK-hCI" firstAttribute="top" secondItem="X9Q-xH-Em4" secondAttribute="bottom" constant="10" id="SiH-j8-pE1"/>
+                            <constraint firstItem="gIv-Y7-TzV" firstAttribute="top" secondItem="1BY-yZ-UHj" secondAttribute="top" constant="30" id="TtX-wH-gai"/>
+                            <constraint firstItem="X9Q-xH-Em4" firstAttribute="top" secondItem="JUb-8z-UOe" secondAttribute="bottom" constant="25" id="VyM-9s-S38"/>
+                            <constraint firstItem="gIv-Y7-TzV" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="40" id="XMm-l4-MKJ"/>
+                            <constraint firstItem="X9Q-xH-Em4" firstAttribute="top" secondItem="gIv-Y7-TzV" secondAttribute="bottom" constant="60" id="Zug-5n-evj"/>
+                            <constraint firstItem="X9Q-xH-Em4" firstAttribute="top" secondItem="JUb-8z-UOe" secondAttribute="bottom" constant="25" id="cg4-20-TRZ"/>
+                            <constraint firstItem="X9Q-xH-Em4" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="20" id="dIG-hh-DYc"/>
+                            <constraint firstItem="vgk-8l-WiM" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="340" id="dxc-xU-xzo"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="bottom" secondItem="vgk-8l-WiM" secondAttribute="bottom" constant="40" id="hbB-g0-jTp"/>
+                            <constraint firstItem="GxK-fK-hCI" firstAttribute="top" secondItem="X9Q-xH-Em4" secondAttribute="bottom" constant="10" id="juI-Jm-sun"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="vgk-8l-WiM" secondAttribute="trailing" constant="40" id="qp6-Do-XbL"/>
+                            <constraint firstItem="JUb-8z-UOe" firstAttribute="top" secondItem="1BY-yZ-UHj" secondAttribute="top" constant="75" id="v2I-kI-mqS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1BY-yZ-UHj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xPb-Vw-h7V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytq-8u-sp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5282.608695652174" y="-668.30357142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -113,7 +537,7 @@
             <objects>
                 <viewController id="jBT-2y-4bf" customClass="SignUpViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8S-x7-D7z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBc-GP-mrn">
@@ -165,7 +589,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58A-1H-cZg">
-                                <rect key="frame" x="40" y="40" width="334" height="36"/>
+                                <rect key="frame" x="40" y="128" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -241,6 +665,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-jJ-VC8">
+                                <rect key="frame" x="57" y="283" width="297" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tu3-hB-Bb3" kind="show" id="clD-nv-i0i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7Os-Eh-8HA"/>
@@ -248,18 +680,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrg-Tj-cvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2633" y="392"/>
+            <point key="canvasLocation" x="2630.434782608696" y="391.74107142857139"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="bd7-FA-Wwv">
             <objects>
                 <viewController id="ZfO-BX-mXa" customClass="LoginViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezd-Tp-LiP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in With Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-sH-oFM">
-                                <rect key="frame" x="40" y="60" width="334" height="36"/>
+                                <rect key="frame" x="40" y="148" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -355,6 +787,15 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IJj-iS-HLC"/>
-        <segue reference="OIs-fM-uhz"/>
+        <segue reference="oCR-w0-afi"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="avoid touching" width="455" height="390"/>
+        <image name="avoidclosecontact" width="461" height="393"/>
+        <image name="clean" width="452" height="393"/>
+        <image name="covercough" width="451" height="389"/>
+        <image name="covid" width="300" height="168"/>
+        <image name="stayhome" width="456" height="390"/>
+        <image name="wash" width="453" height="391"/>
+    </resources>
 </document>
