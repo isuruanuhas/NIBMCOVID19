@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>938202780421-2bk2m96cdk930a43vgi85s41mb9rf5ib.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.938202780421-2bk2m96cdk930a43vgi85s41mb9rf5ib</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDt7h8cCiMAg_TohWrNxneHWAnjxPM8Zlg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>938202780421</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.RAJAPAKSHA-R.W.I.A-COBSCCOMP191P039.NIBMCOVID19</string>
+	<key>PROJECT_ID</key>
+	<string>ioscovid</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ioscovid.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:938202780421:ios:a9eb6652cef516952a5d6c</string>
+	<key>DATABASE_URL</key>
+	<string>https://ioscovid.firebaseio.com</string>
+</dict>
+</plist>
