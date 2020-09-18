@@ -22,9 +22,6 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-Ka-xX8">
                                 <rect key="frame" x="192" y="738" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
-                                <connections>
-                                    <segue destination="RFH-qV-jcX" kind="show" id="84J-KU-CqG"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-qd-5wH">
                                 <rect key="frame" x="20" y="40" width="374" height="168"/>
@@ -32,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH3-49-TBs">
                                 <rect key="frame" x="164" y="386" width="86" height="30"/>
                                 <state key="normal" title="Safe Actions"/>
+                                <connections>
+                                    <segue destination="RFH-qV-jcX" kind="show" id="6Mz-PC-0S1"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u1L-F7-giY">
                                 <rect key="frame" x="60" y="281" width="294" height="97"/>
@@ -97,6 +97,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKD-8i-Hud">
                                 <rect key="frame" x="30" y="35" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="tu3-hB-Bb3" kind="show" id="Jdg-Ml-kup"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxE-es-PbG">
                                 <rect key="frame" x="347" y="738" width="32" height="30"/>
@@ -154,6 +157,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiv-vH-Mgi">
                                 <rect key="frame" x="20" y="30" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="RFH-qV-jcX" kind="show" id="tHA-zN-RB3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paS-Oc-e1M">
                                 <rect key="frame" x="340" y="738" width="34" height="30"/>
@@ -204,6 +210,7 @@ Stay at Home</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Npu-xb-chW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="A5d-aw-WzK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knf-s8-Olw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,6 +227,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IW-BB-nqM">
                                 <rect key="frame" x="40" y="35" width="44" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="VZ2-aY-JtQ" kind="show" id="hjA-3F-rQc"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avoid touching" translatesAutoresizingMaskIntoConstraints="NO" id="apJ-jc-1wL">
                                 <rect key="frame" x="20" y="145" width="374" height="390"/>
@@ -294,6 +304,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-Vj-fbY">
                                 <rect key="frame" x="40" y="40" width="34" height="31"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="iH1-AT-2iS" kind="show" id="B4s-I9-Tuf"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covercough" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-6i-9ej">
                                 <rect key="frame" x="20" y="131" width="374" height="389"/>
@@ -356,6 +369,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWI-RQ-z6e">
                                 <rect key="frame" x="30" y="40" width="59" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="rdi-aR-rog" kind="show" id="T7F-fa-Z86"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m76-CW-vKf">
                                 <rect key="frame" x="90" y="80" width="234" height="25"/>
@@ -424,6 +440,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIv-Y7-TzV">
                                 <rect key="frame" x="40" y="30" width="44" height="31"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="Hge-SD-whl" kind="show" id="fRf-OY-9lo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHO’s guidance on COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUb-8z-UOe">
                                 <rect key="frame" x="90" y="75" width="234" height="21"/>
@@ -786,8 +805,14 @@ Stay at Home</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IJj-iS-HLC"/>
+        <segue reference="YGq-Y7-z89"/>
         <segue reference="oCR-w0-afi"/>
+        <segue reference="uYf-Yt-nGG"/>
+        <segue reference="wpb-eR-RGX"/>
+        <segue reference="zLm-q6-gsr"/>
+        <segue reference="An7-Ts-mg5"/>
+        <segue reference="tHA-zN-RB3"/>
+        <segue reference="Jdg-Ml-kup"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="avoid touching" width="455" height="390"/>
