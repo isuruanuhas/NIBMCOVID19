@@ -745,13 +745,6 @@ Stay at Home</string>
                                     <segue destination="Zbp-rw-be6" kind="show" id="A2v-KQ-63x"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="NIBM is closed untill further notice." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-Xg-J26">
-                                <rect key="frame" x="40" y="517" width="334" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQV-8e-2iN">
                                 <rect key="frame" x="40" y="488" width="114" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -766,22 +759,17 @@ Stay at Home</string>
                             <constraint firstItem="NCa-yW-YMg" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="164" id="2DE-lw-BHb"/>
                             <constraint firstItem="HWo-Zn-odz" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="60" id="2SD-Ck-XQw"/>
                             <constraint firstItem="NCa-yW-YMg" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="8" id="34I-RH-qV6"/>
-                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="CQV-8e-2iN" secondAttribute="bottom" constant="5" id="3Gi-na-CxZ"/>
-                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="CQV-8e-2iN" secondAttribute="bottom" constant="5" id="5D5-Iy-QPF"/>
-                            <constraint firstItem="k6i-Xg-J26" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="40" id="A7c-7H-iS9"/>
                             <constraint firstItem="oI1-E4-zvP" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="14" id="Ak2-2O-6ua"/>
                             <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="CQV-8e-2iN" secondAttribute="trailing" constant="260" id="DAL-vq-mYX"/>
                             <constraint firstItem="oI1-E4-zvP" firstAttribute="top" secondItem="7Os-Eh-8HA" secondAttribute="top" constant="35" id="IJ8-PG-IqH"/>
                             <constraint firstItem="HWo-Zn-odz" firstAttribute="top" secondItem="oI1-E4-zvP" secondAttribute="bottom" constant="25" id="JyH-rg-rPm"/>
                             <constraint firstItem="VvY-sO-jTQ" firstAttribute="leading" secondItem="zft-Fg-YzK" secondAttribute="trailing" constant="100" id="Kk1-x5-goM"/>
-                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="NCa-yW-YMg" secondAttribute="bottom" constant="60" id="LJm-li-a0h"/>
                             <constraint firstItem="HWo-Zn-odz" firstAttribute="top" secondItem="oI1-E4-zvP" secondAttribute="bottom" constant="25" id="LfX-o1-WJ1"/>
                             <constraint firstItem="CQV-8e-2iN" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="40" id="MWj-Yd-EMK"/>
                             <constraint firstItem="CQV-8e-2iN" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="70" id="Nef-cb-pnY"/>
                             <constraint firstItem="7Os-Eh-8HA" firstAttribute="bottom" secondItem="4tm-lz-ebp" secondAttribute="bottom" constant="40" id="TQZ-P9-S71"/>
                             <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="HWo-Zn-odz" secondAttribute="trailing" constant="60" id="UWI-fY-XVE"/>
                             <constraint firstItem="NCa-yW-YMg" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="8" id="dAK-rR-gEC"/>
-                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="k6i-Xg-J26" secondAttribute="trailing" constant="40" id="f21-gv-6Oj"/>
                             <constraint firstItem="4tm-lz-ebp" firstAttribute="leading" secondItem="VvY-sO-jTQ" secondAttribute="trailing" constant="100" id="hZW-zx-KHJ"/>
                             <constraint firstItem="4tm-lz-ebp" firstAttribute="leading" secondItem="VvY-sO-jTQ" secondAttribute="trailing" constant="100" id="jEz-7p-J8q"/>
                             <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="NCa-yW-YMg" secondAttribute="trailing" constant="164" id="mbr-TE-nbx"/>
@@ -821,6 +809,9 @@ Stay at Home</string>
                                 <rect key="frame" x="109" y="274" width="195" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Contact Us / About Us"/>
+                                <connections>
+                                    <segue destination="aXv-EU-eYE" kind="show" id="9A6-1K-ub9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scH-hy-GQB">
                                 <rect key="frame" x="179" y="625" width="56" height="34"/>
@@ -872,61 +863,95 @@ Stay at Home</string>
             <objects>
                 <viewController id="aXv-EU-eYE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qa-OM-XBR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIBM COVID 19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d51-zE-qSu">
-                                <rect key="frame" x="147" y="98" width="120" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nibm" translatesAutoresizingMaskIntoConstraints="NO" id="2Up-Rk-SX3">
-                                <rect key="frame" x="72" y="159" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="NIBM Provided " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-DJ-fkj">
-                                <rect key="frame" x="35" y="358" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="NIBM has provided this solution idea to students to develop an ios" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-DJ-fkj">
+                                <rect key="frame" x="85" y="394" width="244" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF8-XK-YKF">
-                                <rect key="frame" x="47" y="465" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF8-XK-YKF">
+                                <rect key="frame" x="40" y="573" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email : cobsccomp191p039@student.nibm.lk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p37-Nb-lSp">
-                                <rect key="frame" x="51" y="526" width="344" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email : cobsccomp191p039@student.nibm.lk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p37-Nb-lSp">
+                                <rect key="frame" x="40" y="624" width="344" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile : 0766966425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY6-dB-ZYq">
-                                <rect key="frame" x="42" y="569" width="167" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="National Institute of Business Management (NIBM) is the premier Business School in Sri Lanka." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-TL-q4d">
-                                <rect key="frame" x="35" y="282" width="345" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="National Institute of Business Management (NIBM) is the premier Business School in Sri Lanka." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-TL-q4d">
+                                <rect key="frame" x="40" y="307" width="345" height="68"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="647-Xy-Qc8">
+                                <rect key="frame" x="40" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="Zbp-rw-be6" kind="show" id="058-HF-IA0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM COVID 19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d51-zE-qSu">
+                                <rect key="frame" x="138" y="66" width="139.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwI-DE-kL5">
+                                <rect key="frame" x="50" y="165" width="85" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile : 0766966425" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY6-dB-ZYq">
+                                <rect key="frame" x="40" y="674" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d51-zE-qSu" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="138" id="3B5-nu-Cjl"/>
+                            <constraint firstItem="jY6-dB-ZYq" firstAttribute="top" secondItem="p37-Nb-lSp" secondAttribute="bottom" constant="29" id="4GL-RU-0Jd"/>
+                            <constraint firstItem="E1n-TL-q4d" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="40" id="5IU-t1-hAW"/>
+                            <constraint firstItem="647-Xy-Qc8" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="40" id="6KV-TR-jCO"/>
+                            <constraint firstItem="jY6-dB-ZYq" firstAttribute="top" secondItem="p37-Nb-lSp" secondAttribute="bottom" constant="29" id="8Co-cq-ReH"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="xF8-XK-YKF" secondAttribute="trailing" constant="280" id="Hdb-x9-JVC"/>
+                            <constraint firstItem="jY6-dB-ZYq" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="40" id="L64-Wn-Osi"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="jY6-dB-ZYq" secondAttribute="trailing" constant="207" id="MKU-B9-hje"/>
+                            <constraint firstItem="dwI-DE-kL5" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="50" id="Ogy-4x-1Gw"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="bottom" secondItem="jY6-dB-ZYq" secondAttribute="bottom" constant="113" id="Pfm-YA-XFd"/>
+                            <constraint firstItem="p37-Nb-lSp" firstAttribute="top" secondItem="xF8-XK-YKF" secondAttribute="bottom" constant="31" id="R0I-v8-Qqt"/>
+                            <constraint firstItem="p37-Nb-lSp" firstAttribute="top" secondItem="xF8-XK-YKF" secondAttribute="bottom" constant="30" id="SCb-nG-fdY"/>
+                            <constraint firstItem="E1n-TL-q4d" firstAttribute="top" secondItem="dwI-DE-kL5" secondAttribute="bottom" constant="50" id="TTh-fz-c3g"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="RWy-DJ-fkj" secondAttribute="trailing" constant="85" id="Te1-im-TC5"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="p37-Nb-lSp" secondAttribute="trailing" constant="30" id="URY-DV-IS5"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="d51-zE-qSu" secondAttribute="trailing" constant="136.5" id="Vdl-Sl-u8s"/>
+                            <constraint firstItem="647-Xy-Qc8" firstAttribute="top" secondItem="Aih-Nu-BYg" secondAttribute="top" constant="20" id="aF4-fM-8QY"/>
+                            <constraint firstItem="Aih-Nu-BYg" firstAttribute="trailing" secondItem="E1n-TL-q4d" secondAttribute="trailing" constant="29" id="acM-Tx-5OR"/>
+                            <constraint firstItem="RWy-DJ-fkj" firstAttribute="top" secondItem="E1n-TL-q4d" secondAttribute="bottom" constant="18" id="iOe-xk-IV0"/>
+                            <constraint firstItem="xF8-XK-YKF" firstAttribute="top" secondItem="RWy-DJ-fkj" secondAttribute="bottom" constant="168" id="iwN-d6-3m1"/>
+                            <constraint firstItem="RWy-DJ-fkj" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="85" id="jqv-DP-a9r"/>
+                            <constraint firstItem="E1n-TL-q4d" firstAttribute="top" secondItem="dwI-DE-kL5" secondAttribute="bottom" constant="50" id="kjG-qG-IlC"/>
+                            <constraint firstItem="RWy-DJ-fkj" firstAttribute="top" secondItem="E1n-TL-q4d" secondAttribute="bottom" constant="18" id="nIe-5C-3x8"/>
+                            <constraint firstItem="d51-zE-qSu" firstAttribute="top" secondItem="Aih-Nu-BYg" secondAttribute="top" constant="66" id="pyF-tz-Cuk"/>
+                            <constraint firstItem="xF8-XK-YKF" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="40" id="tww-4Y-qnB"/>
+                            <constraint firstItem="xF8-XK-YKF" firstAttribute="top" secondItem="RWy-DJ-fkj" secondAttribute="bottom" constant="168" id="uJ2-IS-9BT"/>
+                            <constraint firstItem="dwI-DE-kL5" firstAttribute="top" secondItem="647-Xy-Qc8" secondAttribute="bottom" constant="115" id="y5O-HE-dC0"/>
+                            <constraint firstItem="p37-Nb-lSp" firstAttribute="leading" secondItem="Aih-Nu-BYg" secondAttribute="leading" constant="40" id="yZa-he-sw8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aih-Nu-BYg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ndN-ef-qGt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fA5-H5-JRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1564,7 +1589,8 @@ Recently?</string>
         <segue reference="HTV-8D-Ovz"/>
         <segue reference="C9g-LC-orq"/>
         <segue reference="YGq-Y7-z89"/>
-        <segue reference="OIs-fM-uhz"/>
+        <segue reference="A2v-KQ-63x"/>
+        <segue reference="oCR-w0-afi"/>
         <segue reference="wyV-D9-f9K"/>
         <segue reference="uYf-Yt-nGG"/>
         <segue reference="wpb-eR-RGX"/>
@@ -1581,7 +1607,6 @@ Recently?</string>
         <image name="clean" width="452" height="393"/>
         <image name="covercough" width="451" height="389"/>
         <image name="covid" width="300" height="168"/>
-        <image name="nibm" width="1027" height="406"/>
         <image name="stayhome" width="456" height="390"/>
         <image name="symptoms" width="400" height="388"/>
         <image name="wash" width="453" height="391"/>
