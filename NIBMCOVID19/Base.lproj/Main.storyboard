@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2rh-Go-uIe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tu3-hB-Bb3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -18,10 +18,16 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-1E-gor">
                                 <rect key="frame" x="327" y="738" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vgc-2f-UkL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN1-Ka-xX8">
                                 <rect key="frame" x="192" y="738" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wyV-D9-f9K"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-qd-5wH">
                                 <rect key="frame" x="20" y="40" width="374" height="168"/>
@@ -45,6 +51,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-Xi-q2L">
                                 <rect key="frame" x="46" y="738" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="mLe-np-nI4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -502,14 +511,11 @@ Stay at Home</string>
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LNB-vZ-6HL">
-                                <rect key="frame" x="70" y="168" width="274" height="190"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWa-hr-WUZ">
-                                <rect key="frame" x="55" y="508" width="304" height="30"/>
+                                <rect key="frame" x="55" y="454" width="304" height="30"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign Up with Email">
@@ -520,28 +526,32 @@ Stay at Home</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-Y0-b5T">
-                                <rect key="frame" x="55" y="578" width="304" height="34"/>
+                                <rect key="frame" x="55" y="524" width="304" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Already Have an Account?"/>
                                 <connections>
                                     <segue destination="ZfO-BX-mXa" kind="show" id="YGq-Y7-z89"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login to use this function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-tr-x3S">
+                                <rect key="frame" x="80" y="100" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="LNB-vZ-6HL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="5fX-6B-0b5"/>
                             <constraint firstItem="6IX-Y0-b5T" firstAttribute="top" secondItem="KWa-hr-WUZ" secondAttribute="bottom" constant="40" id="DSj-gu-rEW"/>
                             <constraint firstItem="6IX-Y0-b5T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="GsJ-GD-f30"/>
-                            <constraint firstItem="LNB-vZ-6HL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="KRU-uI-iTu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWa-hr-WUZ" secondAttribute="trailing" constant="55" id="KZb-FG-Nk1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6IX-Y0-b5T" secondAttribute="bottom" constant="250" id="M1a-Gh-Wpx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6IX-Y0-b5T" secondAttribute="trailing" constant="55" id="WnI-B3-7Jp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7h-tr-x3S" secondAttribute="trailing" constant="80" id="XN8-ks-pNR"/>
+                            <constraint firstItem="R7h-tr-x3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="XvJ-mE-Kmb"/>
                             <constraint firstItem="6IX-Y0-b5T" firstAttribute="top" secondItem="KWa-hr-WUZ" secondAttribute="bottom" constant="40" id="lHQ-AO-KSb"/>
-                            <constraint firstItem="KWa-hr-WUZ" firstAttribute="top" secondItem="LNB-vZ-6HL" secondAttribute="bottom" constant="150" id="qzv-oE-Crh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LNB-vZ-6HL" secondAttribute="trailing" constant="70" id="tHC-gz-hIG"/>
+                            <constraint firstItem="R7h-tr-x3S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="sL0-G9-FGW"/>
                             <constraint firstItem="KWa-hr-WUZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="wH8-ZN-rVF"/>
-                            <constraint firstItem="KWa-hr-WUZ" firstAttribute="top" secondItem="LNB-vZ-6HL" secondAttribute="bottom" constant="150" id="yja-AW-dHA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -556,7 +566,7 @@ Stay at Home</string>
             <objects>
                 <viewController id="jBT-2y-4bf" customClass="SignUpViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8S-x7-D7z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBc-GP-mrn">
@@ -608,7 +618,7 @@ Stay at Home</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58A-1H-cZg">
-                                <rect key="frame" x="40" y="128" width="334" height="36"/>
+                                <rect key="frame" x="40" y="40" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -677,23 +687,79 @@ Stay at Home</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPN-Lm-1lc">
-                                <rect key="frame" x="168" y="160" width="78" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-E4-zvP">
+                                <rect key="frame" x="14" y="79" width="386" height="168"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-Zn-odz">
+                                <rect key="frame" x="60" y="317" width="294" height="97"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">All You Need is 
+Stay at Home</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCa-yW-YMg">
+                                <rect key="frame" x="164" y="422" width="86" height="30"/>
+                                <state key="normal" title="Safe Actions"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zft-Fg-YzK">
+                                <rect key="frame" x="48" y="792" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-sO-jTQ">
+                                <rect key="frame" x="189" y="792" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tm-lz-ebp">
+                                <rect key="frame" x="319" y="792" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="NIBM is closed untill further notice." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-Xg-J26">
+                                <rect key="frame" x="40" y="517" width="334" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQV-8e-2iN">
+                                <rect key="frame" x="40" y="488" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-jJ-VC8">
-                                <rect key="frame" x="57" y="283" width="297" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="tu3-hB-Bb3" kind="show" id="clD-nv-i0i"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VvY-sO-jTQ" firstAttribute="leading" secondItem="zft-Fg-YzK" secondAttribute="trailing" constant="100" id="0IK-xl-PqP"/>
+                            <constraint firstItem="zft-Fg-YzK" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="45" id="1r6-DE-oqE"/>
+                            <constraint firstItem="NCa-yW-YMg" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="164" id="2DE-lw-BHb"/>
+                            <constraint firstItem="HWo-Zn-odz" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="60" id="2SD-Ck-XQw"/>
+                            <constraint firstItem="NCa-yW-YMg" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="8" id="34I-RH-qV6"/>
+                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="CQV-8e-2iN" secondAttribute="bottom" constant="5" id="3Gi-na-CxZ"/>
+                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="CQV-8e-2iN" secondAttribute="bottom" constant="5" id="5D5-Iy-QPF"/>
+                            <constraint firstItem="k6i-Xg-J26" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="40" id="A7c-7H-iS9"/>
+                            <constraint firstItem="oI1-E4-zvP" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="14" id="Ak2-2O-6ua"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="CQV-8e-2iN" secondAttribute="trailing" constant="260" id="DAL-vq-mYX"/>
+                            <constraint firstItem="oI1-E4-zvP" firstAttribute="top" secondItem="7Os-Eh-8HA" secondAttribute="top" constant="35" id="IJ8-PG-IqH"/>
+                            <constraint firstItem="HWo-Zn-odz" firstAttribute="top" secondItem="oI1-E4-zvP" secondAttribute="bottom" constant="25" id="JyH-rg-rPm"/>
+                            <constraint firstItem="VvY-sO-jTQ" firstAttribute="leading" secondItem="zft-Fg-YzK" secondAttribute="trailing" constant="100" id="Kk1-x5-goM"/>
+                            <constraint firstItem="k6i-Xg-J26" firstAttribute="top" secondItem="NCa-yW-YMg" secondAttribute="bottom" constant="60" id="LJm-li-a0h"/>
+                            <constraint firstItem="HWo-Zn-odz" firstAttribute="top" secondItem="oI1-E4-zvP" secondAttribute="bottom" constant="25" id="LfX-o1-WJ1"/>
+                            <constraint firstItem="CQV-8e-2iN" firstAttribute="leading" secondItem="7Os-Eh-8HA" secondAttribute="leading" constant="40" id="MWj-Yd-EMK"/>
+                            <constraint firstItem="CQV-8e-2iN" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="70" id="Nef-cb-pnY"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="bottom" secondItem="4tm-lz-ebp" secondAttribute="bottom" constant="40" id="TQZ-P9-S71"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="HWo-Zn-odz" secondAttribute="trailing" constant="60" id="UWI-fY-XVE"/>
+                            <constraint firstItem="NCa-yW-YMg" firstAttribute="top" secondItem="HWo-Zn-odz" secondAttribute="bottom" constant="8" id="dAK-rR-gEC"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="k6i-Xg-J26" secondAttribute="trailing" constant="40" id="f21-gv-6Oj"/>
+                            <constraint firstItem="4tm-lz-ebp" firstAttribute="leading" secondItem="VvY-sO-jTQ" secondAttribute="trailing" constant="100" id="hZW-zx-KHJ"/>
+                            <constraint firstItem="4tm-lz-ebp" firstAttribute="leading" secondItem="VvY-sO-jTQ" secondAttribute="trailing" constant="100" id="jEz-7p-J8q"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="NCa-yW-YMg" secondAttribute="trailing" constant="164" id="mbr-TE-nbx"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="bottom" secondItem="zft-Fg-YzK" secondAttribute="bottom" constant="40" id="q2e-B7-6q9"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="oI1-E4-zvP" secondAttribute="trailing" constant="14" id="swE-nd-W7w"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="trailing" secondItem="4tm-lz-ebp" secondAttribute="trailing" constant="38" id="ucy-5F-XnM"/>
+                            <constraint firstItem="7Os-Eh-8HA" firstAttribute="bottom" secondItem="VvY-sO-jTQ" secondAttribute="bottom" constant="40" id="wgk-sx-YjA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Os-Eh-8HA"/>
                     </view>
                 </viewController>
@@ -706,11 +772,11 @@ Stay at Home</string>
             <objects>
                 <viewController id="ZfO-BX-mXa" customClass="LoginViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ezd-Tp-LiP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in With Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-sH-oFM">
-                                <rect key="frame" x="40" y="148" width="334" height="36"/>
+                                <rect key="frame" x="40" y="60" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -806,13 +872,13 @@ Stay at Home</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YGq-Y7-z89"/>
-        <segue reference="oCR-w0-afi"/>
+        <segue reference="OIs-fM-uhz"/>
+        <segue reference="wyV-D9-f9K"/>
         <segue reference="uYf-Yt-nGG"/>
         <segue reference="wpb-eR-RGX"/>
         <segue reference="zLm-q6-gsr"/>
         <segue reference="An7-Ts-mg5"/>
-        <segue reference="tHA-zN-RB3"/>
-        <segue reference="Jdg-Ml-kup"/>
+        <segue reference="6Mz-PC-0S1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="avoid touching" width="455" height="390"/>
