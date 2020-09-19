@@ -1176,8 +1176,8 @@ Stay at Home</string>
                                     <segue destination="YHh-6f-6Zx" kind="show" id="xGW-yi-fEL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Help us to identify your situation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-6y-mAJ">
-                                <rect key="frame" x="66" y="141" width="282" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help us to identify your situation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-6y-mAJ">
+                                <rect key="frame" x="66" y="97" width="282" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1196,11 +1196,11 @@ Stay at Home</string>
                                     <segue destination="VJx-3c-dkp" kind="show" id="gJp-eT-a3P"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Sick people" translatesAutoresizingMaskIntoConstraints="NO" id="q71-Jt-JF9">
-                                <rect key="frame" x="61" y="245" width="292" height="231"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sick people" translatesAutoresizingMaskIntoConstraints="NO" id="q71-Jt-JF9">
+                                <rect key="frame" x="61" y="201" width="292" height="231"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Have you met any sick person recently?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-Cn-HzW">
-                                <rect key="frame" x="55" y="607" width="304" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you met any sick person recently?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-Cn-HzW">
+                                <rect key="frame" x="56" y="572" width="303" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1211,26 +1211,26 @@ Stay at Home</string>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="trailing" secondItem="CXc-Bz-on6" secondAttribute="trailing" constant="77" id="0VW-LS-ptV"/>
                             <constraint firstItem="ibh-ff-4CC" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="35" id="1Av-3e-fkB"/>
                             <constraint firstItem="edh-4t-lpX" firstAttribute="top" secondItem="MX1-Cn-HzW" secondAttribute="bottom" constant="70" id="45K-nm-caU"/>
+                            <constraint firstItem="edh-4t-lpX" firstAttribute="top" secondItem="MX1-Cn-HzW" secondAttribute="bottom" constant="70" id="70J-9q-hdd"/>
+                            <constraint firstItem="MX1-Cn-HzW" firstAttribute="top" secondItem="q71-Jt-JF9" secondAttribute="bottom" constant="140" id="AkC-Yi-x8a"/>
                             <constraint firstItem="CXc-Bz-on6" firstAttribute="leading" secondItem="edh-4t-lpX" secondAttribute="trailing" constant="209" id="Bkx-bc-8tq"/>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="trailing" secondItem="q71-Jt-JF9" secondAttribute="trailing" constant="61" id="DYc-Go-R3E"/>
                             <constraint firstItem="CXc-Bz-on6" firstAttribute="top" secondItem="MX1-Cn-HzW" secondAttribute="bottom" constant="70" id="Ezf-lf-jlv"/>
+                            <constraint firstItem="Fwh-ki-fQK" firstAttribute="trailing" secondItem="MX1-Cn-HzW" secondAttribute="trailing" constant="55" id="Hin-wU-azD"/>
                             <constraint firstItem="CXc-Bz-on6" firstAttribute="top" secondItem="MX1-Cn-HzW" secondAttribute="bottom" constant="70" id="NdN-I2-RVc"/>
                             <constraint firstItem="q71-Jt-JF9" firstAttribute="top" secondItem="OFA-6y-mAJ" secondAttribute="bottom" constant="80" id="Nz3-YF-oOW"/>
                             <constraint firstItem="CXc-Bz-on6" firstAttribute="leading" secondItem="edh-4t-lpX" secondAttribute="trailing" constant="209" id="RVy-S6-Kdt"/>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="bottom" secondItem="CXc-Bz-on6" secondAttribute="bottom" constant="115" id="YkV-21-xsu"/>
-                            <constraint firstItem="MX1-Cn-HzW" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="55" id="Zbh-0b-H6i"/>
                             <constraint firstItem="q71-Jt-JF9" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="61" id="Zk5-rc-XfU"/>
-                            <constraint firstItem="MX1-Cn-HzW" firstAttribute="top" secondItem="q71-Jt-JF9" secondAttribute="bottom" constant="150" id="bxe-GT-73z"/>
+                            <constraint firstItem="MX1-Cn-HzW" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="56" id="b3u-X0-Oi8"/>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="bottom" secondItem="edh-4t-lpX" secondAttribute="bottom" constant="115" id="eEd-Pk-pnj"/>
                             <constraint firstItem="ibh-ff-4CC" firstAttribute="top" secondItem="Fwh-ki-fQK" secondAttribute="top" constant="40" id="gnX-34-Hmz"/>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="trailing" secondItem="MX1-Cn-HzW" secondAttribute="trailing" constant="55" id="h0h-Ln-1MI"/>
                             <constraint firstItem="edh-4t-lpX" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="68" id="nlw-Cq-2Ji"/>
-                            <constraint firstItem="MX1-Cn-HzW" firstAttribute="top" secondItem="q71-Jt-JF9" secondAttribute="bottom" constant="150" id="p1D-In-Kpx"/>
                             <constraint firstItem="q71-Jt-JF9" firstAttribute="top" secondItem="OFA-6y-mAJ" secondAttribute="bottom" constant="80" id="rkO-50-QIq"/>
                             <constraint firstItem="OFA-6y-mAJ" firstAttribute="leading" secondItem="Fwh-ki-fQK" secondAttribute="leading" constant="66" id="sn5-Wm-me9"/>
                             <constraint firstItem="OFA-6y-mAJ" firstAttribute="top" secondItem="Fwh-ki-fQK" secondAttribute="top" constant="97" id="xYz-6J-cZ9"/>
                             <constraint firstItem="Fwh-ki-fQK" firstAttribute="trailing" secondItem="OFA-6y-mAJ" secondAttribute="trailing" constant="66" id="zUu-Ab-765"/>
-                            <constraint firstItem="edh-4t-lpX" firstAttribute="top" secondItem="MX1-Cn-HzW" secondAttribute="bottom" constant="70" id="zXU-TC-14V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fwh-ki-fQK"/>
                     </view>
