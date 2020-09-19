@@ -52,7 +52,7 @@ Stay at Home</string>
                                 <rect key="frame" x="46" y="738" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="mLe-np-nI4"/>
+                                    <segue destination="Sbc-Sg-Zoi" kind="show" id="Mil-Xd-fas"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1190,6 +1190,39 @@ Stay at Home</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBB-Js-z1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4105" y="1115"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ffQ-VT-hW4">
+            <objects>
+                <viewController id="Sbc-Sg-Zoi" customClass="MapViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CK-w8-5o0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8ML-Il-anS" customClass="map">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Sbc-Sg-Zoi" id="r7E-dZ-FPy"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="top" secondItem="Mrf-5Y-OFl" secondAttribute="top" id="83l-tG-xGE"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="leading" secondItem="Mrf-5Y-OFl" secondAttribute="leading" id="ULt-OF-S1Z"/>
+                            <constraint firstItem="Mrf-5Y-OFl" firstAttribute="trailing" secondItem="8ML-Il-anS" secondAttribute="trailing" id="cZ2-Rz-ee9"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="bottom" secondItem="Mrf-5Y-OFl" secondAttribute="bottom" id="jma-lg-uud"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mrf-5Y-OFl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cH5-Wg-GXf"/>
+                    <connections>
+                        <outlet property="mymap" destination="8ML-Il-anS" id="vKm-7k-Exq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzg-eE-50Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091.304347826087" y="1475.8928571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RnH-cl-BBH">

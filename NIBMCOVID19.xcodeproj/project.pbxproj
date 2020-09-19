@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7223D4102516891B004EA100 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223D40F2516891B004EA100 /* MapViewController.swift */; };
 		72B0D57B251292D3003AC8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57A251292D3003AC8A3 /* AppDelegate.swift */; };
 		72B0D57D251292D3003AC8A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57C251292D3003AC8A3 /* SceneDelegate.swift */; };
 		72B0D57F251292D3003AC8A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57E251292D3003AC8A3 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		3186350CF7F7598FE83E38D3 /* Pods-NIBMCOVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMCOVID19.debug.xcconfig"; path = "Target Support Files/Pods-NIBMCOVID19/Pods-NIBMCOVID19.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5FC0E588E7DC8AEF899727 /* Pods_NIBMCOVID19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMCOVID19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7223D40F2516891B004EA100 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		72B0D577251292D3003AC8A3 /* NIBMCOVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMCOVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B0D57A251292D3003AC8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B0D57C251292D3003AC8A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				72B0D58F2512939C003AC8A3 /* SignUpViewController.swift */,
 				72B0D591251293A9003AC8A3 /* LoginViewController.swift */,
 				72B0D593251293B7003AC8A3 /* HomeViewController.swift */,
+				7223D40F2516891B004EA100 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				72B0D57B251292D3003AC8A3 /* AppDelegate.swift in Sources */,
 				72B0D5992512A877003AC8A3 /* Utilities.swift in Sources */,
 				72B0D5902512939C003AC8A3 /* SignUpViewController.swift in Sources */,
+				7223D4102516891B004EA100 /* MapViewController.swift in Sources */,
 				72B0D592251293A9003AC8A3 /* LoginViewController.swift in Sources */,
 				72B0D57D251292D3003AC8A3 /* SceneDelegate.swift in Sources */,
 				72B0D594251293B7003AC8A3 /* HomeViewController.swift in Sources */,
