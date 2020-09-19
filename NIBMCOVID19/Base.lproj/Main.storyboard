@@ -684,11 +684,11 @@ Stay at Home</string>
             <objects>
                 <viewController storyboardIdentifier="HomeView" id="0Y6-Z8-2a1" customClass="HomeViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VIP-SX-tTw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="covid" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-E4-zvP">
-                                <rect key="frame" x="14" y="79" width="386" height="168"/>
+                                <rect key="frame" x="14" y="35" width="386" height="168"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-Zn-odz">
                                 <rect key="frame" x="60" y="317" width="294" height="97"/>
@@ -704,15 +704,18 @@ Stay at Home</string>
                                 <state key="normal" title="Safe Actions"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zft-Fg-YzK">
-                                <rect key="frame" x="48" y="792" width="41" height="30"/>
+                                <rect key="frame" x="48" y="738" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-sO-jTQ">
-                                <rect key="frame" x="189" y="792" width="30" height="30"/>
+                                <rect key="frame" x="189" y="738" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="lXv-1D-c1J" kind="show" id="C9g-LC-orq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tm-lz-ebp">
-                                <rect key="frame" x="319" y="792" width="57" height="30"/>
+                                <rect key="frame" x="319" y="738" width="57" height="30"/>
                                 <state key="normal" title="Settings"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="NIBM is closed untill further notice." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-Xg-J26">
@@ -762,6 +765,7 @@ Stay at Home</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Os-Eh-8HA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ciC-Pz-RJj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrg-Tj-cvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -869,8 +873,138 @@ Stay at Home</string>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3fI-lt-HuR">
+            <objects>
+                <viewController id="lXv-1D-c1J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezo-pq-C8L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-Mx-y0s">
+                                <rect key="frame" x="72" y="236" width="270" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add/Update Body Tempurature">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2RP-N0-6vj" kind="show" id="HHf-gm-g9C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-pN-DMU">
+                                <rect key="frame" x="151" y="458" width="112" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create News">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-Sh-v2g">
+                                <rect key="frame" x="134" y="347" width="146" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Update Situation">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5N-Sl-HiE">
+                                <rect key="frame" x="20" y="50" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-H8-FJs">
+                                <rect key="frame" x="40" y="738" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="0Y6-Z8-2a1" kind="show" id="tkg-2D-V9O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nug-pN-DMU" firstAttribute="top" secondItem="gcL-Sh-v2g" secondAttribute="bottom" constant="75" id="0wA-3a-emM"/>
+                            <constraint firstItem="zSA-yi-dqU" firstAttribute="trailing" secondItem="gcL-Sh-v2g" secondAttribute="trailing" constant="134" id="7NP-d9-anS"/>
+                            <constraint firstItem="uvj-H8-FJs" firstAttribute="top" secondItem="xTb-Mx-y0s" secondAttribute="bottom" constant="465" id="7Yl-fe-GXp"/>
+                            <constraint firstItem="xTb-Mx-y0s" firstAttribute="top" secondItem="e5N-Sl-HiE" secondAttribute="bottom" constant="150" id="Cim-it-pVc"/>
+                            <constraint firstItem="uvj-H8-FJs" firstAttribute="leading" secondItem="zSA-yi-dqU" secondAttribute="leading" constant="40" id="Dqz-7t-K3I"/>
+                            <constraint firstItem="gcL-Sh-v2g" firstAttribute="top" secondItem="xTb-Mx-y0s" secondAttribute="bottom" constant="75" id="Mcw-LN-RZO"/>
+                            <constraint firstItem="e5N-Sl-HiE" firstAttribute="leading" secondItem="zSA-yi-dqU" secondAttribute="leading" constant="20" id="Nxb-lf-w2m"/>
+                            <constraint firstItem="e5N-Sl-HiE" firstAttribute="top" secondItem="zSA-yi-dqU" secondAttribute="top" constant="50" id="Qxd-Tw-tkU"/>
+                            <constraint firstItem="Nug-pN-DMU" firstAttribute="top" secondItem="gcL-Sh-v2g" secondAttribute="bottom" constant="75" id="TQx-c1-7li"/>
+                            <constraint firstItem="gcL-Sh-v2g" firstAttribute="leading" secondItem="zSA-yi-dqU" secondAttribute="leading" constant="134" id="ioi-LQ-GRt"/>
+                            <constraint firstItem="zSA-yi-dqU" firstAttribute="trailing" secondItem="Nug-pN-DMU" secondAttribute="trailing" constant="151" id="j4I-Lx-m6t"/>
+                            <constraint firstItem="xTb-Mx-y0s" firstAttribute="leading" secondItem="zSA-yi-dqU" secondAttribute="leading" constant="72" id="o0o-tl-uhS"/>
+                            <constraint firstItem="Nug-pN-DMU" firstAttribute="leading" secondItem="zSA-yi-dqU" secondAttribute="leading" constant="151" id="orR-bw-iNp"/>
+                            <constraint firstItem="zSA-yi-dqU" firstAttribute="trailing" secondItem="xTb-Mx-y0s" secondAttribute="trailing" constant="72" id="wLk-sU-Aak"/>
+                            <constraint firstItem="gcL-Sh-v2g" firstAttribute="top" secondItem="xTb-Mx-y0s" secondAttribute="bottom" constant="75" id="x6U-qf-IDl"/>
+                            <constraint firstItem="zSA-yi-dqU" firstAttribute="bottom" secondItem="uvj-H8-FJs" secondAttribute="bottom" constant="40" id="x8N-qD-eL1"/>
+                            <constraint firstItem="xTb-Mx-y0s" firstAttribute="top" secondItem="e5N-Sl-HiE" secondAttribute="bottom" constant="150" id="znY-uZ-tUr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zSA-yi-dqU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLU-7c-Yx0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPe-qA-qfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3307.2463768115945" y="1104.9107142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZOc-kn-jRB">
+            <objects>
+                <viewController id="2RP-N0-6vj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZe-f3-ELQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Update Body Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81f-pr-KJs">
+                                <rect key="frame" x="44" y="94" width="326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-Gx-BU5">
+                                <rect key="frame" x="158" y="274" width="98" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xl-uW-iGa">
+                                <rect key="frame" x="120" y="348" width="174" height="30"/>
+                                <state key="normal" title="Add Tempurature"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-8C-lOt">
+                                <rect key="frame" x="40" y="790" width="34" height="32"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="lXv-1D-c1J" kind="show" id="uzm-Oo-2Hy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XB1-zh-Q1v" firstAttribute="trailing" secondItem="7Xl-uW-iGa" secondAttribute="trailing" constant="120" id="0kC-Iw-yZg"/>
+                            <constraint firstItem="81f-pr-KJs" firstAttribute="leading" secondItem="XB1-zh-Q1v" secondAttribute="leading" constant="44" id="4fA-tb-tMX"/>
+                            <constraint firstItem="7Xl-uW-iGa" firstAttribute="top" secondItem="zcs-Gx-BU5" secondAttribute="bottom" constant="40" id="78w-Xo-Z7W"/>
+                            <constraint firstItem="XB1-zh-Q1v" firstAttribute="trailing" secondItem="81f-pr-KJs" secondAttribute="trailing" constant="44" id="HaY-wu-D3f"/>
+                            <constraint firstItem="XB1-zh-Q1v" firstAttribute="trailing" secondItem="zcs-Gx-BU5" secondAttribute="trailing" constant="158" id="Hz4-1p-L3a"/>
+                            <constraint firstItem="7Xl-uW-iGa" firstAttribute="top" secondItem="zcs-Gx-BU5" secondAttribute="bottom" constant="40" id="QNn-vl-JCk"/>
+                            <constraint firstItem="zcs-Gx-BU5" firstAttribute="top" secondItem="81f-pr-KJs" secondAttribute="bottom" constant="146" id="RuJ-uc-XKL"/>
+                            <constraint firstItem="fNc-8C-lOt" firstAttribute="leading" secondItem="XB1-zh-Q1v" secondAttribute="leading" constant="40" id="T4c-u0-LIq"/>
+                            <constraint firstItem="zcs-Gx-BU5" firstAttribute="leading" secondItem="XB1-zh-Q1v" secondAttribute="leading" constant="158" id="V2Q-gW-rwN"/>
+                            <constraint firstItem="81f-pr-KJs" firstAttribute="top" secondItem="XB1-zh-Q1v" secondAttribute="top" constant="50" id="aoh-ct-zYe"/>
+                            <constraint firstItem="fNc-8C-lOt" firstAttribute="top" secondItem="81f-pr-KJs" secondAttribute="bottom" constant="662" id="cgk-Ug-rFR"/>
+                            <constraint firstItem="XB1-zh-Q1v" firstAttribute="bottom" secondItem="fNc-8C-lOt" secondAttribute="bottom" constant="40" id="wLe-Zt-PhW"/>
+                            <constraint firstItem="7Xl-uW-iGa" firstAttribute="leading" secondItem="XB1-zh-Q1v" secondAttribute="leading" constant="120" id="z7w-Xp-bjr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XB1-zh-Q1v"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jCR-Rw-yfq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBB-Js-z1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4105" y="1115"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uzm-Oo-2Hy"/>
         <segue reference="YGq-Y7-z89"/>
         <segue reference="OIs-fM-uhz"/>
         <segue reference="wyV-D9-f9K"/>
