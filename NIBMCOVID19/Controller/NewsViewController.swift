@@ -21,6 +21,7 @@ class NewsViewController: UIViewController {
         LabelNewsShow.alpha=0
         
     }
+  
     
 
     @IBAction func btnAddNews(_ sender: Any) {

@@ -10,6 +10,7 @@
 		7223D4102516891B004EA100 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223D40F2516891B004EA100 /* MapViewController.swift */; };
 		7223D41225174899004EA100 /* TempuratureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223D41125174899004EA100 /* TempuratureViewController.swift */; };
 		7223D4142517659C004EA100 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223D4132517659C004EA100 /* NewsViewController.swift */; };
+		7223D41625178948004EA100 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223D41525178947004EA100 /* SurveyViewController.swift */; };
 		72B0D57B251292D3003AC8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57A251292D3003AC8A3 /* AppDelegate.swift */; };
 		72B0D57D251292D3003AC8A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57C251292D3003AC8A3 /* SceneDelegate.swift */; };
 		72B0D57F251292D3003AC8A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D57E251292D3003AC8A3 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		7223D40F2516891B004EA100 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7223D41125174899004EA100 /* TempuratureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempuratureViewController.swift; sourceTree = "<group>"; };
 		7223D4132517659C004EA100 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		7223D41525178947004EA100 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		72B0D577251292D3003AC8A3 /* NIBMCOVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMCOVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B0D57A251292D3003AC8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B0D57C251292D3003AC8A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				7223D40F2516891B004EA100 /* MapViewController.swift */,
 				7223D41125174899004EA100 /* TempuratureViewController.swift */,
 				7223D4132517659C004EA100 /* NewsViewController.swift */,
+				7223D41525178947004EA100 /* SurveyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				72B0D592251293A9003AC8A3 /* LoginViewController.swift in Sources */,
 				72B0D57D251292D3003AC8A3 /* SceneDelegate.swift in Sources */,
 				72B0D594251293B7003AC8A3 /* HomeViewController.swift in Sources */,
+				7223D41625178948004EA100 /* SurveyViewController.swift in Sources */,
 				72B0D59D2513BA33003AC8A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -397,7 +397,7 @@ Stay at Home</string>
                                 <rect key="frame" x="52" y="734.5" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Zbp-rw-be6" kind="show" id="6jd-l9-Sr4"/>
+                                    <segue destination="lXv-1D-c1J" kind="show" id="QQK-lS-aca"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nibm is closed until further notice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EE-lV-gl9">
@@ -570,6 +570,13 @@ Stay at Home</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-0b-6FX">
+                                <rect key="frame" x="43" y="738" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="tu3-hB-Bb3" kind="show" id="ATN-mo-Qv2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -577,6 +584,8 @@ Stay at Home</string>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="gIv-Y7-TzV" secondAttribute="trailing" constant="330" id="946-9h-0l8"/>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="JUb-8z-UOe" secondAttribute="trailing" constant="90" id="9vb-tc-4ib"/>
                             <constraint firstItem="vgk-8l-WiM" firstAttribute="top" secondItem="GxK-fK-hCI" secondAttribute="bottom" constant="60" id="B5i-a5-9hC"/>
+                            <constraint firstItem="vgk-8l-WiM" firstAttribute="leading" secondItem="BaG-0b-6FX" secondAttribute="trailing" constant="256" id="Fqx-sU-g8B"/>
+                            <constraint firstItem="BaG-0b-6FX" firstAttribute="top" secondItem="GxK-fK-hCI" secondAttribute="bottom" constant="60" id="Gh7-O0-Idf"/>
                             <constraint firstItem="vgk-8l-WiM" firstAttribute="top" secondItem="GxK-fK-hCI" secondAttribute="bottom" constant="60" id="Gqm-oT-hCL"/>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="GxK-fK-hCI" secondAttribute="trailing" constant="20" id="MZD-QW-kiB"/>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="X9Q-xH-Em4" secondAttribute="trailing" constant="20" id="Qa2-aU-XgI"/>
@@ -591,7 +600,9 @@ Stay at Home</string>
                             <constraint firstItem="vgk-8l-WiM" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="340" id="dxc-xU-xzo"/>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="bottom" secondItem="vgk-8l-WiM" secondAttribute="bottom" constant="40" id="hbB-g0-jTp"/>
                             <constraint firstItem="GxK-fK-hCI" firstAttribute="top" secondItem="X9Q-xH-Em4" secondAttribute="bottom" constant="10" id="juI-Jm-sun"/>
+                            <constraint firstItem="BaG-0b-6FX" firstAttribute="leading" secondItem="1BY-yZ-UHj" secondAttribute="leading" constant="43" id="l8x-Sn-PGG"/>
                             <constraint firstItem="1BY-yZ-UHj" firstAttribute="trailing" secondItem="vgk-8l-WiM" secondAttribute="trailing" constant="40" id="qp6-Do-XbL"/>
+                            <constraint firstItem="1BY-yZ-UHj" firstAttribute="bottom" secondItem="BaG-0b-6FX" secondAttribute="bottom" constant="40" id="t1N-pr-XyP"/>
                             <constraint firstItem="JUb-8z-UOe" firstAttribute="top" secondItem="1BY-yZ-UHj" secondAttribute="top" constant="75" id="v2I-kI-mqS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1BY-yZ-UHj"/>
@@ -1352,10 +1363,10 @@ Stay at Home</string>
             </objects>
             <point key="canvasLocation" x="2091.304347826087" y="1475.8928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="RnH-cl-BBH">
             <objects>
-                <viewController id="ORp-kw-ZLM" sceneMemberID="viewController">
+                <viewController id="ORp-kw-ZLM" customClass="SurveyViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hdn-wW-bj3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1393,6 +1404,8 @@ Stay at Home</string>
                                 <rect key="frame" x="60" y="743" width="30" height="30"/>
                                 <state key="normal" title="Yes"/>
                                 <connections>
+                                    <action selector="SymptompsYes:" destination="ORp-kw-ZLM" eventType="touchUpInside" id="9c2-M7-I54"/>
+                                    <action selector="YesSymptomps:" destination="ORp-kw-ZLM" eventType="touchUpInside" id="cCg-Vq-tpB"/>
                                     <segue destination="YHh-6f-6Zx" kind="show" id="fc5-SU-hSf"/>
                                 </connections>
                             </button>
@@ -1430,10 +1443,10 @@ Stay at Home</string>
             </objects>
             <point key="canvasLocation" x="3305.7971014492755" y="1822.7678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="NNB-ug-bk1">
             <objects>
-                <viewController id="YHh-6f-6Zx" sceneMemberID="viewController">
+                <viewController id="YHh-6f-6Zx" customClass="SurveyViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XIw-Tr-N5c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1508,10 +1521,10 @@ Stay at Home</string>
             </objects>
             <point key="canvasLocation" x="4198.5507246376819" y="1822.7678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="PLh-e6-6bK">
             <objects>
-                <viewController id="qac-w5-2tH" sceneMemberID="viewController">
+                <viewController id="qac-w5-2tH" customClass="SurveyViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OEY-xB-D7X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1587,10 +1600,10 @@ Stay at Home</string>
             </objects>
             <point key="canvasLocation" x="5036" y="1831"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="WOp-c3-Lw4">
             <objects>
-                <viewController id="VJx-3c-dkp" sceneMemberID="viewController">
+                <viewController id="VJx-3c-dkp" customClass="SurveyViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lO-gB-dKA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1669,10 +1682,10 @@ Recently?</string>
             </objects>
             <point key="canvasLocation" x="5806" y="1831"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey View Controller-->
         <scene sceneID="B5O-87-eS8">
             <objects>
-                <viewController id="owV-0r-hfH" sceneMemberID="viewController">
+                <viewController id="owV-0r-hfH" customClass="SurveyViewController" customModule="NIBMCOVID19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FXC-Rs-gfn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1749,15 +1762,16 @@ Recently?</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9A6-1K-ub9"/>
         <segue reference="ST7-pK-N4r"/>
         <segue reference="Iyp-pu-2HT"/>
-        <segue reference="wud-i5-bYM"/>
-        <segue reference="xGW-yi-fEL"/>
-        <segue reference="fiu-1I-eII"/>
+        <segue reference="5BR-3c-8Ib"/>
+        <segue reference="v8W-pz-2BB"/>
+        <segue reference="HTV-8D-Ovz"/>
         <segue reference="jj4-i8-cO0"/>
-        <segue reference="QKH-T4-2Wf"/>
+        <segue reference="QQK-lS-aca"/>
         <segue reference="YGq-Y7-z89"/>
-        <segue reference="6jd-l9-Sr4"/>
+        <segue reference="058-HF-IA0"/>
         <segue reference="oCR-w0-afi"/>
         <segue reference="wyV-D9-f9K"/>
         <segue reference="uYf-Yt-nGG"/>
