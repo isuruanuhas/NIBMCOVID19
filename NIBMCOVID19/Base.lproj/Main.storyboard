@@ -730,6 +730,9 @@ Stay at Home</string>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zft-Fg-YzK">
                                 <rect key="frame" x="48" y="738" width="41" height="30"/>
                                 <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="Sbc-Sg-Zoi" kind="show" id="jj4-i8-cO0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-sO-jTQ">
                                 <rect key="frame" x="189" y="738" width="30" height="30"/>
@@ -1641,6 +1644,7 @@ Recently?</string>
         <segue reference="wud-i5-bYM"/>
         <segue reference="xGW-yi-fEL"/>
         <segue reference="HTV-8D-Ovz"/>
+        <segue reference="jj4-i8-cO0"/>
         <segue reference="C9g-LC-orq"/>
         <segue reference="YGq-Y7-z89"/>
         <segue reference="A2v-KQ-63x"/>

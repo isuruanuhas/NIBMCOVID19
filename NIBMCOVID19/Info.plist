@@ -65,6 +65,6 @@
 	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>we need your location in order to proceed</string>
+	<string>please allow to see current location</string>
 </dict>
 </plist>
