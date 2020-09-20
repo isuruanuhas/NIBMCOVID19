@@ -1200,18 +1200,39 @@ Stay at Home</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8ML-Il-anS" customClass="map">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="734"/>
                                 <connections>
                                     <outlet property="delegate" destination="Sbc-Sg-Zoi" id="r7E-dZ-FPy"/>
                                 </connections>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK9-iS-KmQ">
+                                <rect key="frame" x="186" y="20" width="75" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsL-YK-kNY">
+                                <rect key="frame" x="20" y="15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="tu3-hB-Bb3" kind="show" id="Bwb-kO-LS0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="8ML-Il-anS" firstAttribute="top" secondItem="Mrf-5Y-OFl" secondAttribute="top" id="83l-tG-xGE"/>
-                            <constraint firstItem="8ML-Il-anS" firstAttribute="leading" secondItem="Mrf-5Y-OFl" secondAttribute="leading" id="ULt-OF-S1Z"/>
-                            <constraint firstItem="Mrf-5Y-OFl" firstAttribute="trailing" secondItem="8ML-Il-anS" secondAttribute="trailing" id="cZ2-Rz-ee9"/>
-                            <constraint firstItem="8ML-Il-anS" firstAttribute="bottom" secondItem="Mrf-5Y-OFl" secondAttribute="bottom" id="jma-lg-uud"/>
+                            <constraint firstItem="bK9-iS-KmQ" firstAttribute="leading" secondItem="FsL-YK-kNY" secondAttribute="trailing" constant="120" id="1lk-xZ-Qw2"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="top" secondItem="bK9-iS-KmQ" secondAttribute="bottom" constant="30" id="4xt-xV-Sgc"/>
+                            <constraint firstItem="bK9-iS-KmQ" firstAttribute="leading" secondItem="FsL-YK-kNY" secondAttribute="trailing" constant="120" id="DU8-gd-i5P"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="top" secondItem="FsL-YK-kNY" secondAttribute="bottom" constant="28" id="E3z-xl-FiX"/>
+                            <constraint firstItem="Mrf-5Y-OFl" firstAttribute="trailing" secondItem="bK9-iS-KmQ" secondAttribute="trailing" constant="153" id="K7j-kN-FxN"/>
+                            <constraint firstItem="FsL-YK-kNY" firstAttribute="top" secondItem="Mrf-5Y-OFl" secondAttribute="top" constant="15" id="LOm-8G-fs7"/>
+                            <constraint firstItem="bK9-iS-KmQ" firstAttribute="top" secondItem="Mrf-5Y-OFl" secondAttribute="top" constant="20" id="Nmy-Xg-qij"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="bottom" secondItem="Mrf-5Y-OFl" secondAttribute="bottom" id="csy-XC-NXB"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="leading" secondItem="Mrf-5Y-OFl" secondAttribute="leading" id="mmF-ky-df6"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="trailing" secondItem="Mrf-5Y-OFl" secondAttribute="trailing" id="seC-CT-wTJ"/>
+                            <constraint firstItem="8ML-Il-anS" firstAttribute="top" secondItem="FsL-YK-kNY" secondAttribute="bottom" constant="29" id="xvd-PI-nZK"/>
+                            <constraint firstItem="FsL-YK-kNY" firstAttribute="leading" secondItem="Mrf-5Y-OFl" secondAttribute="leading" constant="20" id="zAQ-bI-Qc8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mrf-5Y-OFl"/>
                     </view>
@@ -1630,7 +1651,7 @@ Recently?</string>
         <segue reference="zLm-q6-gsr"/>
         <segue reference="An7-Ts-mg5"/>
         <segue reference="6Mz-PC-0S1"/>
-        <segue reference="vhA-n1-fjJ"/>
+        <segue reference="Bwb-kO-LS0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Crowded" width="226" height="228"/>
