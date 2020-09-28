@@ -24,6 +24,8 @@
 		72B0D5992512A877003AC8A3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D5982512A877003AC8A3 /* Utilities.swift */; };
 		72B0D59D2513BA33003AC8A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D59C2513BA33003AC8A3 /* Constants.swift */; };
 		72EC3DEC25223F6600E461DE /* NIBMCOVID19UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC3DEB25223F6600E461DE /* NIBMCOVID19UITests.swift */; };
+		72EC3DF425225E9800E461DE /* IDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC3DF325225E9800E461DE /* IDViewController.swift */; };
+		72EC3DF62522658900E461DE /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC3DF52522658900E461DE /* IndexViewController.swift */; };
 		E216D573DBE38C6D105BE73C /* Pods_NIBMCOVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5FC0E588E7DC8AEF899727 /* Pods_NIBMCOVID19.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		72EC3DE925223F6600E461DE /* NIBMCOVID19UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIBMCOVID19UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EC3DEB25223F6600E461DE /* NIBMCOVID19UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBMCOVID19UITests.swift; sourceTree = "<group>"; };
 		72EC3DED25223F6600E461DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72EC3DF325225E9800E461DE /* IDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDViewController.swift; sourceTree = "<group>"; };
+		72EC3DF52522658900E461DE /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		86AAE38AE7F1B9C2ED8D0011 /* Pods-NIBMCOVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMCOVID19.release.xcconfig"; path = "Target Support Files/Pods-NIBMCOVID19/Pods-NIBMCOVID19.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,8 @@
 				7223D41125174899004EA100 /* TempuratureViewController.swift */,
 				7223D4132517659C004EA100 /* NewsViewController.swift */,
 				7223D41525178947004EA100 /* SurveyViewController.swift */,
+				72EC3DF325225E9800E461DE /* IDViewController.swift */,
+				72EC3DF52522658900E461DE /* IndexViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,12 +326,14 @@
 				72B0D5992512A877003AC8A3 /* Utilities.swift in Sources */,
 				7223D41225174899004EA100 /* TempuratureViewController.swift in Sources */,
 				7223D4142517659C004EA100 /* NewsViewController.swift in Sources */,
+				72EC3DF62522658900E461DE /* IndexViewController.swift in Sources */,
 				72B0D5902512939C003AC8A3 /* SignUpViewController.swift in Sources */,
 				7223D4102516891B004EA100 /* MapViewController.swift in Sources */,
 				72B0D592251293A9003AC8A3 /* LoginViewController.swift in Sources */,
 				72B0D57D251292D3003AC8A3 /* SceneDelegate.swift in Sources */,
 				72B0D594251293B7003AC8A3 /* HomeViewController.swift in Sources */,
 				7223D41625178948004EA100 /* SurveyViewController.swift in Sources */,
+				72EC3DF425225E9800E461DE /* IDViewController.swift in Sources */,
 				72B0D59D2513BA33003AC8A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
