@@ -23,8 +23,19 @@
 		72B0D5962512A092003AC8A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72B0D5952512A092003AC8A3 /* GoogleService-Info.plist */; };
 		72B0D5992512A877003AC8A3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D5982512A877003AC8A3 /* Utilities.swift */; };
 		72B0D59D2513BA33003AC8A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D59C2513BA33003AC8A3 /* Constants.swift */; };
+		72EC3DEC25223F6600E461DE /* NIBMCOVID19UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC3DEB25223F6600E461DE /* NIBMCOVID19UITests.swift */; };
 		E216D573DBE38C6D105BE73C /* Pods_NIBMCOVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5FC0E588E7DC8AEF899727 /* Pods_NIBMCOVID19.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72EC3DEE25223F6600E461DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B0D56F251292D3003AC8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72B0D576251292D3003AC8A3;
+			remoteInfo = NIBMCOVID19;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3186350CF7F7598FE83E38D3 /* Pods-NIBMCOVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMCOVID19.debug.xcconfig"; path = "Target Support Files/Pods-NIBMCOVID19/Pods-NIBMCOVID19.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +58,9 @@
 		72B0D5952512A092003AC8A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72B0D5982512A877003AC8A3 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		72B0D59C2513BA33003AC8A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		72EC3DE925223F6600E461DE /* NIBMCOVID19UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIBMCOVID19UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72EC3DEB25223F6600E461DE /* NIBMCOVID19UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBMCOVID19UITests.swift; sourceTree = "<group>"; };
+		72EC3DED25223F6600E461DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86AAE38AE7F1B9C2ED8D0011 /* Pods-NIBMCOVID19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMCOVID19.release.xcconfig"; path = "Target Support Files/Pods-NIBMCOVID19/Pods-NIBMCOVID19.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +70,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E216D573DBE38C6D105BE73C /* Pods_NIBMCOVID19.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72EC3DE625223F6600E461DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				72B0D579251292D3003AC8A3 /* NIBMCOVID19 */,
+				72EC3DEA25223F6600E461DE /* NIBMCOVID19UITests */,
 				72B0D578251292D3003AC8A3 /* Products */,
 				6F4EA8CEB7F1B0F5DF7B9A29 /* Pods */,
 				3C5688122B3C17CC8E197CB8 /* Frameworks */,
@@ -93,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				72B0D577251292D3003AC8A3 /* NIBMCOVID19.app */,
+				72EC3DE925223F6600E461DE /* NIBMCOVID19UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +160,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		72EC3DEA25223F6600E461DE /* NIBMCOVID19UITests */ = {
+			isa = PBXGroup;
+			children = (
+				72EC3DEB25223F6600E461DE /* NIBMCOVID19UITests.swift */,
+				72EC3DED25223F6600E461DE /* Info.plist */,
+			);
+			path = NIBMCOVID19UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +191,24 @@
 			productReference = 72B0D577251292D3003AC8A3 /* NIBMCOVID19.app */;
 			productType = "com.apple.product-type.application";
 		};
+		72EC3DE825223F6600E461DE /* NIBMCOVID19UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72EC3DF225223F6600E461DE /* Build configuration list for PBXNativeTarget "NIBMCOVID19UITests" */;
+			buildPhases = (
+				72EC3DE525223F6600E461DE /* Sources */,
+				72EC3DE625223F6600E461DE /* Frameworks */,
+				72EC3DE725223F6600E461DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72EC3DEF25223F6600E461DE /* PBXTargetDependency */,
+			);
+			name = NIBMCOVID19UITests;
+			productName = NIBMCOVID19UITests;
+			productReference = 72EC3DE925223F6600E461DE /* NIBMCOVID19UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +221,10 @@
 				TargetAttributes = {
 					72B0D576251292D3003AC8A3 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					72EC3DE825223F6600E461DE = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 72B0D576251292D3003AC8A3;
 					};
 				};
 			};
@@ -188,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				72B0D576251292D3003AC8A3 /* NIBMCOVID19 */,
+				72EC3DE825223F6600E461DE /* NIBMCOVID19UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +256,13 @@
 				72B0D5962512A092003AC8A3 /* GoogleService-Info.plist in Resources */,
 				72B0D584251292D5003AC8A3 /* Assets.xcassets in Resources */,
 				72B0D582251292D3003AC8A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72EC3DE725223F6600E461DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +330,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72EC3DE525223F6600E461DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EC3DEC25223F6600E461DE /* NIBMCOVID19UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72EC3DEF25223F6600E461DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72B0D576251292D3003AC8A3 /* NIBMCOVID19 */;
+			targetProxy = 72EC3DEE25223F6600E461DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		72B0D580251292D3003AC8A3 /* Main.storyboard */ = {
@@ -440,6 +518,42 @@
 			};
 			name = Release;
 		};
+		72EC3DF025223F6600E461DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NIBMCOVID19UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RAJAPAKSHA-R.W.I.A-COBSCCOMP191P039.NIBMCOVID19UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NIBMCOVID19;
+			};
+			name = Debug;
+		};
+		72EC3DF125223F6600E461DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NIBMCOVID19UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RAJAPAKSHA-R.W.I.A-COBSCCOMP191P039.NIBMCOVID19UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NIBMCOVID19;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +571,15 @@
 			buildConfigurations = (
 				72B0D58C251292D5003AC8A3 /* Debug */,
 				72B0D58D251292D5003AC8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72EC3DF225223F6600E461DE /* Build configuration list for PBXNativeTarget "NIBMCOVID19UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72EC3DF025223F6600E461DE /* Debug */,
+				72EC3DF125223F6600E461DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
